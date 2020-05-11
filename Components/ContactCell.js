@@ -38,7 +38,7 @@ export default class ContactCell extends Component {
                 <TouchableOpacity
                     key={item.id}
                     style={styles.container}
-                    onPress={() => navigation.navigate("Details")}>
+                    onPress={() => navigation.navigate("Details", item)}>
                     <Image style={styles.tinyLogo} source={require("../profile-user.png")}/>
                     <Text>
                         {item.name}

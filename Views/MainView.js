@@ -39,7 +39,8 @@ export default class MainView extends Component {
             );
         };
 
-        const DetailsScreen = ({ navigation }) =>{
+        const DetailsScreen = ({route, navigation}) =>{
+            console.log(route.params)
             return (
               <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
                 <Text>Details Screen</Text>
